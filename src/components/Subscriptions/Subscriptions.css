@@ -1,0 +1,60 @@
+/* grid c5 */
+.grid-c5 .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.grid-c5 .grid-item:last-child {
+  margin-bottom: 0;
+}
+.grid-c5 .grid-item-l {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.grid-c5 .grid-item-l .icon {
+  background-color: rgb(254, 30, 0, 0.15);
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-c5 .grid-item-l .icon img {
+  width: 16px;
+}
+.grid-c5 .grid-item-l .text {
+  color: var(--clr-silver-v1);
+}
+.grid-c5 .grid-item-l .text span {
+  color: #8a8587;
+  font-size: 15px;
+}
+.grid-c5 .grid-item-r span {
+  font-weight: 600;
+}
+
+
+
+.grid-c5 .grid-items {
+  height: 150px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Add padding to prevent scrollbar overlaying the content */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Optional: Style the scrollbar */
+.grid-c5 .grid-items::-webkit-scrollbar {
+  width: 4px; /* Set width of the scrollbar */
+}
+
+.grid-c5 .grid-items::-webkit-scrollbar-thumb {
+  background: #ccc; /* Set color of the scrollbar thumb */
+  border-radius: 4px; /* Round the corners */
+}
+
+.grid-c5 .grid-items::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker color when hovering */
+}
